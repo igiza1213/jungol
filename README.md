@@ -1,3 +1,22 @@
-Get started by customizing your environment (defined in the .idx/dev.nix file) with the tools and IDE extensions you'll need for your project!
+# Jungol
 
-Learn more at https://developers.google.com/idx/guides/customize-idx-env
+Jungol Let's go
+
+## templete
+
+```typescript
+import fs = require("fs");
+const filePath = process.platform === "linux" ? "/dev/stdin" : "/input.txt";
+var input = fs.readFileSync(__dirname + filePath).toString();
+
+export const solution = (stdinInput: string) => {
+  const [a, b] = stdinInput
+    .trim()
+    .split(" ")
+    .map(Number);
+
+  console.log(a + b);
+};
+
+solution(input);
+```
