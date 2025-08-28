@@ -1,0 +1,1 @@
+print((lambda n: "\n".join([" ".join(map(lambda x: chr(65 + (x - 1) % 26),list(range(n**2 - n + 1 + i, i , -n)),))for i in range(n - 1, -1, -1)]))(int(input())))
